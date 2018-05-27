@@ -31,5 +31,11 @@ namespace GameInCity
         public string GetNameGamer2() { return name_gamer2; }
         public int GetCurrentGamer() { return current_gamer; }
         public void NextGamer() { current_gamer = (current_gamer == 1) ? 2 : 1; }
+        public string GetNameCurrentGamer()
+        {
+            if (current_gamer == 1)
+                return name_gamer1;
+            else return name_gamer2;
+        }
     }
 }
