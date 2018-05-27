@@ -11,6 +11,7 @@ namespace GameInCity
     {
         private string[] cities = null;
         private string name_gamer1 = null;
+        private string name_gamer2 = null;
         private int pause = 10;
         public bool Load()
         {
@@ -25,5 +26,6 @@ namespace GameInCity
         public void SetPause(int pause) { this.pause = pause; }
         public int GetPause() { return pause; }
         public string GetNameGamer1() { return name_gamer1; }
+        public void SetNameGamer2(string name) { name_gamer2 = name; }
     }
 }
