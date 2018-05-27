@@ -19,8 +19,10 @@ namespace GameInCity
                 Console.WriteLine("Имя второго игрока: ");
                 game.SetNameGamer2(Console.ReadLine());
                 game.SetPause(5);
-                int pause = game.GetPause();
-                for (; pause > 0; pause--)
+                while (!game.EndGame())
+                {
+                    int pause = game.GetPause();
+                    for (; pause > 0; pause--)
                 {
                     Console.Write("Ходит игрок {0}. Осталось времени подумать: {1}\r", game.GetNameCurrentGamer(), pause);
                     Thread.Sleep(1000);
@@ -50,6 +52,8 @@ namespace GameInCity
                     Console.ReadKey();
                     return;
                 }
+                }
+                Console.WriteLine("Конец игры))");
             }
             else
                 Console.WriteLine("Не найден файл со списком городов!");
