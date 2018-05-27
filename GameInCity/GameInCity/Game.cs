@@ -59,5 +59,11 @@ namespace GameInCity
                 used_cities = new List<string>();
             used_cities.Add(city);
         }
+        public bool EndGame()
+        {
+            if (used_cities == null || cities == null)
+                return false;
+            return used_cities.Count == cities.Length;
+        }
     }
 }
