@@ -14,6 +14,7 @@ namespace GameInCity
         private string name_gamer2 = null;
         private int current_gamer = 1;
         private int pause = 10;
+        private List<string> used_cities = null;
         public bool Load()
         {
             try
@@ -42,6 +43,14 @@ namespace GameInCity
             foreach (string value in cities)
                 if (String.Compare(city, value, true) == 0)
                     return true;
+            return false;
+        }
+        public bool SearchUsedCity(string city)
+        {
+            if (used_cities != null)
+                foreach (string value in used_cities)
+                    if (String.Compare(city, value, true) == 0)
+                        return true;
             return false;
         }
     }
