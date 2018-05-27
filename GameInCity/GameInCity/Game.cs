@@ -30,5 +30,6 @@ namespace GameInCity
         public void SetNameGamer2(string name) { name_gamer2 = name; }
         public string GetNameGamer2() { return name_gamer2; }
         public int GetCurrentGamer() { return current_gamer; }
+        public void NextGamer() { current_gamer = (current_gamer == 1) ? 2 : 1; }
     }
 }
