@@ -37,5 +37,12 @@ namespace GameInCity
                 return name_gamer1;
             else return name_gamer2;
         }
+        public bool SearchCity(string city)
+        {
+            foreach (string value in cities)
+                if (String.Compare(city, value, true) == 0)
+                    return true;
+            return false;
+        }
     }
 }
