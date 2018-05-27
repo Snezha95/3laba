@@ -38,5 +38,12 @@ namespace Test
             string rezult = game.GetNameGamer2();
             Assert.AreEqual("345", rezult);
         }
+        [TestMethod]
+        public void TestMethod_CurrentGamer_1()
+        {
+            Game game = new Game();
+            int rezult = game.GetCurrentGamer();
+            Assert.AreEqual(1, rezult);
+        }
     }
 }
