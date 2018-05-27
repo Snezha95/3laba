@@ -15,6 +15,8 @@ namespace GameInCity
             {
                 Console.WriteLine("Имя первого игрока: ");
                 game.SetNameGamer1(Console.ReadLine());
+                Console.WriteLine("Имя второго игрока: ");
+                game.SetNameGamer2(Console.ReadLine());
             }
             else
                 Console.WriteLine("Не найден файл со списком городов!");
