@@ -53,5 +53,11 @@ namespace GameInCity
                         return true;
             return false;
         }
+        public void AddUsedCity(string city)
+        {
+            if (used_cities == null)
+                used_cities = new List<string>();
+            used_cities.Add(city);
+        }
     }
 }
