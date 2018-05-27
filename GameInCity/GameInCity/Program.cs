@@ -34,8 +34,14 @@ namespace GameInCity
                     Console.WriteLine("Такого города нет!");
                     end = true;
                 }
+                else if (game.SearchUsedCity(city))
+                {
+                    Console.WriteLine("Уже был такой город!");
+                    end = true;
+                }
                 else
                 {
+                    game.AddUsedCity(city);
                     game.NextGamer();
                 }
                 if (end)
