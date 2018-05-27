@@ -12,6 +12,7 @@ namespace GameInCity
         private string[] cities = null;
         private string name_gamer1 = null;
         private string name_gamer2 = null;
+        private int current_gamer = 1;
         private int pause = 10;
         public bool Load()
         {
@@ -28,5 +29,6 @@ namespace GameInCity
         public string GetNameGamer1() { return name_gamer1; }
         public void SetNameGamer2(string name) { name_gamer2 = name; }
         public string GetNameGamer2() { return name_gamer2; }
+        public int GetCurrentGamer() { return current_gamer; }
     }
 }
