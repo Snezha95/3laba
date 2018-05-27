@@ -22,5 +22,13 @@ namespace Test
             string rezult = game.GetNameGamer1();
             Assert.AreEqual("123", rezult);
         }
+        [TestMethod]
+        public void TestMethod_Pause()
+        {
+            Game game = new Game();
+            game.SetPause(10);
+            int rezult = game.GetPause();
+            Assert.AreEqual(20, rezult);
+        }
     }
 }
