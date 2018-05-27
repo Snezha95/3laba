@@ -61,5 +61,13 @@ namespace Test
             string rezult = game.GetNameCurrentGamer();
             Assert.AreEqual("123", rezult);
         }
+        [TestMethod]
+        public void TestMethod_SearchCity_1()
+        {
+            Game game = new Game();
+            game.Load();
+            bool rezult = game.SearchCity("москва");
+            Assert.AreEqual(true, rezult);
+        }
     }
 }
