@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameInCity", "GameInCity\GameInCity.csproj", "{3896A757-D478-4F22-B2D6-5BCFC5347830}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D395BB34-3EBF-403B-AFEF-2FE806C5FF17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3896A757-D478-4F22-B2D6-5BCFC5347830} = {3896A757-D478-4F22-B2D6-5BCFC5347830}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{3896A757-D478-4F22-B2D6-5BCFC5347830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3896A757-D478-4F22-B2D6-5BCFC5347830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3896A757-D478-4F22-B2D6-5BCFC5347830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D395BB34-3EBF-403B-AFEF-2FE806C5FF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D395BB34-3EBF-403B-AFEF-2FE806C5FF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D395BB34-3EBF-403B-AFEF-2FE806C5FF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D395BB34-3EBF-403B-AFEF-2FE806C5FF17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
