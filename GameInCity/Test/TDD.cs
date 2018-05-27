@@ -14,5 +14,13 @@ namespace Test
             bool rezult = game.Load();
             Assert.AreEqual(true, rezult);
         }
+        [TestMethod]
+        public void TestMethod_NameGamer1()
+        {
+            Game game = new Game();
+            game.SetNameGamer1("123");
+            string rezult = game.GetNameGamer1();
+            Assert.AreEqual("123", rezult);
+        }
     }
 }
