@@ -45,5 +45,13 @@ namespace Test
             int rezult = game.GetCurrentGamer();
             Assert.AreEqual(1, rezult);
         }
+        [TestMethod]
+        public void TestMethod_CurrentGamer_2()
+        {
+            Game game = new Game();
+            game.NextGamer();
+            int rezult = game.GetCurrentGamer();
+            Assert.AreEqual(2, rezult);
+        }
     }
 }
