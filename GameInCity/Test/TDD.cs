@@ -69,5 +69,13 @@ namespace Test
             bool rezult = game.SearchCity("москва");
             Assert.AreEqual(true, rezult);
         }
+        [TestMethod]
+        public void TestMethod_SearchCity_2()
+        {
+            Game game = new Game();
+            game.Load();
+            bool rezult = game.SearchCity("киев");
+            Assert.AreEqual(false, rezult);
+        }
     }
 }
