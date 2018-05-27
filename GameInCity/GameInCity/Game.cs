@@ -27,5 +27,6 @@ namespace GameInCity
         public int GetPause() { return pause; }
         public string GetNameGamer1() { return name_gamer1; }
         public void SetNameGamer2(string name) { name_gamer2 = name; }
+        public string GetNameGamer2() { return name_gamer2; }
     }
 }
